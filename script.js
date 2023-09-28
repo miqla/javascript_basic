@@ -1,11 +1,29 @@
-alert("hai cantik");
+// ----- Latihan 1: belajar alert, prompt, dan confirm -------
 
-var mulai = "true";
+// alert("hai cantik");
 
-while (mulai) {
-  var nama = prompt("masukkan nama:");
-  alert("halo " + nama);
+// var mulai = "true";
 
-  mulai = confirm("main lagi?");
-}
-alert("terimakasih");
+// while (mulai) {
+//   var nama = prompt("masukkan nama:");
+//   alert("halo " + nama);
+
+//   mulai = confirm("main lagi?");
+// }
+// alert("terimakasih");
+
+// ------- Latihan 2: increment --------
+
+// var awal = 1;
+// while (awal <= 5) {
+//   console.log("Hello World");
+//   awal++;
+// }
+
+// ------- Latihan 3: increment + variabel --------
+
+// var awal = 1;
+// while (awal <= 5) {
+//   console.log("Hello World " + awal + "x");
+//   awal++;
+// }
