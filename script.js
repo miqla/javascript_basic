@@ -29,19 +29,41 @@
 // }
 
 //  ----- latihan switch -----
-var item = prompt("masukkan nama makanan: \n contoh: nasi, burger");
+// var item = prompt("masukkan nama makanan: \n contoh: nasi, burger");
 
-switch (item) {
-  case "nasi":
-  case "sayur":
-  case "susu":
-    alert("makanan sehat");
-    break;
-  case "burger":
-  case "softdrink":
-    alert("makanan tidak sehat");
-    break;
-  default:
-    alert("tidak ada di pilihan");
-    break;
+// switch (item) {
+//   case "nasi":
+//   case "sayur":
+//   case "susu":
+//     alert("makanan sehat");
+//     break;
+//   case "burger":
+//   case "softdrink":
+//     alert("makanan tidak sehat");
+//     break;
+//   default:
+//     alert("tidak ada di pilihan");
+//     break;
+// }
+
+//  ------ Perulangan bersarang: segitiga bintang -------
+// var s = "";
+// for (var i = 0; i < 10; i++) {
+//   // s += "*";
+//   for (var j = 0; j <= i; j++) {
+//     s += "*";
+//   }
+//   s += "\n";
+// }
+// console.log(s);
+
+//  ------ Perulangan bersarang: segitiga bintang kebalik-------
+var s = "";
+for (var i = 10; i > 0; i--) {
+  // s += "*";
+  for (var j = 0; j < i; j++) {
+    s += "*";
+  }
+  s += "\n";
 }
+console.log(s);
