@@ -57,14 +57,53 @@
 // }
 
 // ------ Angkot 4 ------
+// var jmlAngkot = 10;
+// var angkotBeroperasi = 6;
+// for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+//   if (noAngkot <= angkotBeroperasi) {
+//     console.log("Angkot No. " + noAngkot + " Beroperasi dengan baik");
+//   } else if (noAngkot === 8) {
+//     console.log("Angkot No. " + noAngkot + " Sedang lembur");
+//   } else {
+//     console.log("Angkot No. " + noAngkot + " Sedang tidak beroperasi");
+//   }
+// }
+
+// ------ Angkot 5 ------
+// var jmlAngkot = 10;
+// var angkotBeroperasi = 6;
+// for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+//   if (noAngkot <= angkotBeroperasi) {
+//     console.log("Angkot No. " + noAngkot + " Beroperasi dengan baik");
+//   } else if (noAngkot === 8 || noAngkot === 10) {
+//     console.log("Angkot No. " + noAngkot + " Sedang lembur");
+//   } else {
+//     console.log("Angkot No. " + noAngkot + " Sedang tidak beroperasi");
+//   }
+// }
+
+// ------ Angkot 6 ------
 var jmlAngkot = 10;
 var angkotBeroperasi = 6;
 for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
-  if (noAngkot <= angkotBeroperasi) {
+  if (noAngkot <= angkotBeroperasi && noAngkot !== 5) {
     console.log("Angkot No. " + noAngkot + " Beroperasi dengan baik");
-  } else if (noAngkot === 8) {
+  } else if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5) {
     console.log("Angkot No. " + noAngkot + " Sedang lembur");
   } else {
     console.log("Angkot No. " + noAngkot + " Sedang tidak beroperasi");
   }
 }
+
+// ------ Angkot 6, Cara lain------
+// var jmlAngkot = 10;
+// var angkotBeroperasi = 6;
+// for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+//   if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5) {
+//     console.log("Angkot No. " + noAngkot + " Sedang lembur");
+//   } else if (noAngkot <= angkotBeroperasi) {
+//     console.log("Angkot No. " + noAngkot + " Beroperasi dengan baik");
+//   } else {
+//     console.log("Angkot No. " + noAngkot + " Sedang tidak beroperasi");
+//   }
+// }
