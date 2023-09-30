@@ -80,3 +80,17 @@
 //   }
 // }
 // console.log(s);
+
+//  ------ Perulangan bersarang: segitiga bintang, tapi rata kanan-------
+var s = "";
+var size = 20;
+for (var i = 0; i < size; i++) {
+  for (var k = size - 1; k > i; k--) {
+    s += " ";
+  }
+  for (var j = 0; j <= i; j++) {
+    s += "*";
+  }
+  s += "\n";
+}
+console.log(s);
