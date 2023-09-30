@@ -119,15 +119,29 @@
 // console.log(s);
 
 //  ------ Perulangan bersarang: gambar panah dari kiri -------
+// var s = "";
+// for (var i = 0; i < 10; i++) {
+//   for (var j = 0; j <= i; j++) {
+//     s += "*";
+//   }
+//   s += "\n";
+// }
+// for (var i = 10; i > 0; i--) {
+//   for (var j = 0; j < i; j++) {
+//     s += "*";
+//   }
+//   s += "\n";
+// }
+// console.log(s);
+
+//  --------- Perulangan bersarang: segitiga sama kaki ----------
 var s = "";
-for (var i = 0; i < 10; i++) {
-  for (var j = 0; j <= i; j++) {
-    s += "*";
+var size = 40;
+for (var i = 0; i <= size; i += 2) {
+  for (var k = size / 2; k > i / 2; k--) {
+    s += " ";
   }
-  s += "\n";
-}
-for (var i = 10; i > 0; i--) {
-  for (var j = 0; j < i; j++) {
+  for (var j = 0; j <= i; j++) {
     s += "*";
   }
   s += "\n";
