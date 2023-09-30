@@ -27,3 +27,21 @@
 //   console.log("Hello World " + awal + "x");
 //   awal++;
 // }
+
+//  ----- latihan switch -----
+var item = prompt("masukkan nama makanan: \n contoh: nasi, burger");
+
+switch (item) {
+  case "nasi":
+  case "sayur":
+  case "susu":
+    alert("makanan sehat");
+    break;
+  case "burger":
+  case "softdrink":
+    alert("makanan tidak sehat");
+    break;
+  default:
+    alert("tidak ada di pilihan");
+    break;
+}
