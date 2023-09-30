@@ -82,13 +82,52 @@
 // console.log(s);
 
 //  ------ Perulangan bersarang: segitiga bintang, tapi rata kanan-------
+// var s = "";
+// var size = 10;
+// for (var i = 0; i < size; i++) {
+//   for (var k = size - 1; k > i; k--) {
+//     s += " ";
+//   }
+//   for (var j = 0; j <= i; j++) {
+//     s += "*";
+//   }
+//   s += "\n";
+// }
+// console.log(s);
+
+//  ------ Perulangan bersarang: gambar panah dari kanan -------
+// var s = "";
+// var size = 10;
+// for (var i = 0; i < size; i++) {
+//   for (var k = size - 1; k > i; k--) {
+//     s += " ";
+//   }
+//   for (var j = 0; j <= i; j++) {
+//     s += "*";
+//   }
+//   s += "\n";
+// }
+// for (i = size; i > 0; i--) {
+//   for (j = 0; j < i; j++) {
+//     s += "*";
+//   }
+//   s += "\n";
+//   for (k = i - 1; k < size; k++) {
+//     s += " ";
+//   }
+// }
+// console.log(s);
+
+//  ------ Perulangan bersarang: gambar panah dari kiri -------
 var s = "";
-var size = 20;
-for (var i = 0; i < size; i++) {
-  for (var k = size - 1; k > i; k--) {
-    s += " ";
-  }
+for (var i = 0; i < 10; i++) {
   for (var j = 0; j <= i; j++) {
+    s += "*";
+  }
+  s += "\n";
+}
+for (var i = 10; i > 0; i--) {
+  for (var j = 0; j < i; j++) {
     s += "*";
   }
   s += "\n";
