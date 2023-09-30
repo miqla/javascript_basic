@@ -135,9 +135,23 @@
 // console.log(s);
 
 //  --------- Perulangan bersarang: segitiga sama kaki ----------
+// var s = "";
+// var size = 40;
+// for (var i = 0; i <= size; i += 2) {
+//   for (var k = size / 2; k > i / 2; k--) {
+//     s += " ";
+//   }
+//   for (var j = 0; j <= i; j++) {
+//     s += "*";
+//   }
+//   s += "\n";
+// }
+// console.log(s);
+
+//  --------- Perulangan bersarang: segitiga sama kaki terbalik ----------
 var s = "";
-var size = 40;
-for (var i = 0; i <= size; i += 2) {
+var size = 10;
+for (var i = size; i >= 0; i -= 2) {
   for (var k = size / 2; k > i / 2; k--) {
     s += " ";
   }
