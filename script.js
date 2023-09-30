@@ -49,7 +49,7 @@
 //  ------ Perulangan bersarang: segitiga bintang -------
 // var s = "";
 // for (var i = 0; i < 10; i++) {
-//   // s += "*";
+//  // s += "*";
 //   for (var j = 0; j <= i; j++) {
 //     s += "*";
 //   }
@@ -58,12 +58,25 @@
 // console.log(s);
 
 //  ------ Perulangan bersarang: segitiga bintang kebalik-------
-var s = "";
-for (var i = 10; i > 0; i--) {
-  // s += "*";
-  for (var j = 0; j < i; j++) {
-    s += "*";
-  }
-  s += "\n";
-}
-console.log(s);
+// var s = "";
+// for (var i = 10; i > 0; i--) {
+//   for (var j = 0; j < i; j++) {
+//     s += "*";
+//   }
+//   s += "\n";
+// }
+// console.log(s);
+
+//  ------ Perulangan bersarang: segitiga bintang kebalik, tapi rata kanan-------
+// var s = "";
+// var size = 10;
+// for (var i = size; i > 0; i--) {
+//   for (var j = 0; j < i; j++) {
+//     s += "*";
+//   }
+//   s += "\n";
+//   for (var k = i - 1; k < size; k++) {
+//     s += " ";
+//   }
+// }
+// console.log(s);
