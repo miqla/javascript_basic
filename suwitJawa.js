@@ -43,5 +43,3 @@ while (tanya) {
   tanya = confirm("Main lagi ?");
 }
 alert("Terimakasih sudah bermain");
-
-//  -------- Game Tebak Angka ------------
