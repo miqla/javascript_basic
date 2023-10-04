@@ -25,18 +25,20 @@ comp =
     ? 9
     : 10;
 // rules
-var hasil = player == comp ? "BENAR" : player < comp ? "KURANG" : "LEBIH";
 // hasil
-if (hasil == "BENAR") {
-  alert("Selamat, Angka yang anda masukkan benar");
-} else {
+var lagi = true;
+while (lagi) {
   for (var i = 3; i > 0; i--) {
-    if (hasil == "KURANG") {
+    var hasil = player == comp ? "BENAR" : player < comp ? "KURANG" : "LEBIH";
+    if (hasil == "BENAR") {
+      alert("Selamat, Angka yang anda masukkan benar");
+      break;
+    } else if (hasil == "KURANG") {
       alert(
         "Tebakan Anda " +
           hasil +
           "\nAnda Masih memiliki " +
-          (i - 1) +
+          i +
           " kali kesempatan"
       );
       player = parseInt(prompt("Masukkan Angka"));
@@ -45,11 +47,28 @@ if (hasil == "BENAR") {
         "Tebakan anda " +
           hasil +
           "\nAnda Masih memiliki " +
-          (i - 1) +
+          i +
           " kali kesempatan"
       );
       player = parseInt(prompt("Masukkan Angka"));
     }
   }
-  alert("Kesempatan Anda sudah habis, Angka yang benar adalah: " + comp);
+  if (i == 0) {
+    alert("Kesempatan Anda sudah habis, Angka yang benar adalah: " + comp);
+  }
+  lagi = confirm("Main lagi?");
 }
+
+//   while (hasil !== "BENAR") {
+//     for (var i = 2; i > 0; i--) {
+//       alert(
+//         "Tebakan Anda " +
+//           hasil +
+//           "\nAnda masih memiliki " +
+//           i +
+//           " kali kesempatan."
+//       );
+//       player = parseInt(prompt("Masukkan Angka 1-10"));
+//     }
+//   }
+//   alert("Kesempatan Anda sudah habis, Angka yang benar adalah: " + comp);
