@@ -17,3 +17,9 @@ function tambah() {
 }
 coba = tambah(1, 5, 8, 7, 6, 4);
 console.log(coba);
+
+// Refactoring / Menyederhanakan fungsi yg sudah kita buat
+function jumlahVolumeDuaKubus(a, b) {
+  return a * a * a + b * b * b;
+}
+console.log(jumlahVolumeDuaKubus(8, 3));
