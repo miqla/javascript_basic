@@ -50,7 +50,7 @@ var angka2 = angka.map(function (m) {
 });
 console.log(angka2.join());
 
-// sort
+// 10. sort
 angka.sort();
 console.log(angka.join(" - "));
 // sort jika ada angka 2 digit
@@ -58,3 +58,16 @@ angka.sort(function (a, b) {
   return a - b;
 });
 console.log(angka.join(" - "));
+
+// 11. Filter: bisa mengembalikan banyak nilai
+var angka3 = [4, 10, 6, 8, 56, 9, 1, 2];
+var angka4 = angka3.filter(function (x) {
+  return x > 5;
+});
+console.log(angka4.join(" - "));
+
+// 12. Find, cuma bisa mengembalikan 1 nilai
+var angka5 = angka3.find(function (x) {
+  return x > 5;
+});
+console.log(angka5);
