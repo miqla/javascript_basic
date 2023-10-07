@@ -1,3 +1,4 @@
+// Fungsi description
 function volumeDuaKubus(a, b) {
   var volA = a * a * a;
   var volB = b * b * b;
@@ -39,3 +40,9 @@ function faktorial(n) {
   return n * faktorial(n - 1);
 }
 console.log(faktorial(5));
+
+// Fungsi expression
+var tampilNama = function (nama) {
+  alert("hai, salam kenal " + nama);
+};
+tampilNama("Mida");
