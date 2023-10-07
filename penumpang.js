@@ -34,3 +34,21 @@ var tambahPenumpang = function (namaPenumpang, penumpang) {
     }
   }
 };
+
+// Function hapus penumpang
+var hapusPenumpang = function (namaPenumpang, penumpang) {
+  if (penumpang.length == 0) {
+    console.log("Angkot masih Kosong!");
+    return penumpang;
+  } else {
+    for (var i = 0; i < penumpang.length; i++) {
+      if (penumpang[i] == namaPenumpang) {
+        penumpang[i] = undefined;
+        return penumpang;
+      } else if (i == penumpang.length - 1) {
+        console.log(namaPenumpang + " tidak ada didalam angkot");
+        return penumpang;
+      }
+    }
+  }
+};
